@@ -34,3 +34,13 @@ individual grimas on your own data (or sandbox data) before using extensively!
 for inspiration and testing.
 * Thanks to Ex Libris for the underlying APIs, and to ELUNA for 
 the community to work with them.
+
+## Tips for forking this repo.
+1. Clone your fork:
+git clone git@github.com:YOUR-USERNAME/YOUR-FORKED-REPO.git
+2. Add remote from original repository in your forked repository:
+cd into/cloned/fork-repo
+git remote add upstream git://github.com/ORIGINAL-DEV-USERNAME/REPO-YOU-FORKED-FROM.git
+git fetch upstream
+3. Updating your fork from original repo to keep up with their changes:
+git pull upstream master
