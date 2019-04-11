@@ -1,0 +1,12 @@
+<GrimaForm>
+    <Title>Almagic: Shared Collections Facility Lookup</Title>
+    <Field
+        name="barcode"
+        label="Barcode"
+        shortname="i"
+        autocomplete="off"
+        required="yes"
+        placeholder="Barcode of item to view..."
+    />
+</GrimaForm>
+
