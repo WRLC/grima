@@ -1,6 +1,14 @@
 <GrimaForm>
     <Title>Grima: Add Internal Note 1</Title>
     <Field
+        name="barcode"
+        label="Barcode"
+        shortname="b"
+        autocomplete="off"
+        required="yes"
+        placeholder="Barcode of item to modify..."
+    />
+    <Field
         name="note"
         label="Internal Note 1"
         shortname="n"
@@ -9,12 +17,5 @@
         persistent="yes"
         placeholder="Note to add to item..."
     />
-    <Field
-        name="barcode"
-        label="Barcode"
-        shortname="b"
-        autocomplete="off"
-        required="yes"
-        placeholder="Barcode of item to modify..."
-    />
+
 </GrimaForm>
