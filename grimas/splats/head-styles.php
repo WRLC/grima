@@ -12,6 +12,9 @@ foreach ($local_stylesheets as $src):
             $integrity = "sha384-$hash";
 ?>
     <link rel="stylesheet" href="<?=$e($href.$src)?>" integrity="<?=$e($integrity)?>"/>
+    <link rel="stylesheet" href="../Materialize/materialize.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 <?php break ?>
 <?php else: ?>
     <!-- no <?= $src ?> -->

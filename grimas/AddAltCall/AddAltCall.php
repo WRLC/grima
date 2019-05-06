@@ -10,9 +10,9 @@ class AddAltCall extends GrimaTask {
 		$item['alternative_call_number'] = $this['note'];
 		$item->updateAlma();
 		if ($this['note'] == "") {
-			$this->addMessage('success',"Alternative Call Number cleared on {$this['barcode']}");
+			$this->addMessage('success',"Alternative Call Number cleared on {$this['barcode']} - {$item['title']}");
 		} else {
-			$this->addMessage('success',"Alternative Call Number added to {$this['barcode']}");
+			$this->addMessage('success',"Alternative Call Number added to {$this['barcode']} - {$item['title']}");
 		}
 	}
 
