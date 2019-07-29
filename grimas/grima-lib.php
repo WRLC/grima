@@ -2493,6 +2493,7 @@ class Item extends AlmaObject {
 		'physical_condition' => '//physical_condition',
 		'temp_library' => '//temp_library',
 		'temp_location' => '//temp_location',
+		'temp_policy' => '//temp_policy',
 	);
 
 // {{{ loadFromAlma (get)

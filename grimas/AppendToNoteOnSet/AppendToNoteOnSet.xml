@@ -10,7 +10,7 @@
 	/>
 	<Field
         name="whichnote"
-        label="Note Field:"
+        label="Field to Change:"
         type="select"
         required="yes"
         placeholder="Example: Internal Note 1"
@@ -21,10 +21,11 @@
         <option value="statistics_note_1">Statistics Note 1</option>
         <option value="statistics_note_2">Statistics Note 2</option>
         <option value="statistics_note_3">Statistics Note 3</option>
+	<option value="temp_policy">Temporary Item Policy</option>
     </Field>
 	<Field
 		name="note"
-		label="Note"
+		label="Note or Code"
 		shortname="n"
 		autocomplete="off"
 		required="yes"
