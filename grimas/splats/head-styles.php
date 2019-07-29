@@ -16,8 +16,6 @@ foreach ($local_stylesheets as $src):
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 <?php break ?>
-<?php else: ?>
-    <!-- no <?= $src ?> -->
 <?php endif ?>
 <?php endforeach ?>
 <?php endforeach ?>

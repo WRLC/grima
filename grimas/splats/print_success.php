@@ -13,12 +13,16 @@
         <div class="container mt-4 position-relative">
         </div>
         <!-- success -->
+<<<<<<< HEAD
         <?= $t('success') ?>
         <div class="position-absolute mx-auto help-button">
             <a class="btn btn-info" href="<?=$e($basename)?>.php">BACK</a>
             <a class="btn btn-info" href="/home.html">HOME</a>
             <a class="btn btn-info" href="../Logout/Logout.php">LOGOUT</a>
         </div>
+=======
+<?= $t('success') ?>
+>>>>>>> 0be73a336ce259bae00bdeaea26da30311963da5
       </div>
     </div>
   </body>
