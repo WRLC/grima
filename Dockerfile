@@ -6,3 +6,4 @@ RUN apt update \
 # Add ssh keys from secrets
 RUN ln -s /run/secrets/user_ssh_key /root/.ssh
 RUN ln -s /run/secrets/gitconfig /root/.gitconfig
+RUN chown -R root:root /root
