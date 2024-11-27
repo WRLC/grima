@@ -1,0 +1,37 @@
+<GrimaForm>
+    <Title>Grima: Add Any Note</Title>
+    <Field
+        name="barcode"
+        label="Barcode"
+        shortname="b"
+        autocomplete="off"
+        required="yes"
+        placeholder="Barcode of item you wish to modify..."
+        autofocus="autofocus"
+    />
+    	<Field
+        name="whichnote"
+        label="Field to Change:"
+        type="select"
+	autocomplete="off"
+        required="yes"
+        persistent="yes"
+        >
+        <option value="internal_note_1">Internal Note 1</option>
+        <option value="internal_note_2">Internal Note 2</option>
+        <option value="internal_note_3">Internal Note 3</option>
+        <option value="statistics_note_1">Statistics Note 1</option>
+        <option value="statistics_note_2">Statistics Note 2</option>
+        <option value="statistics_note_3">Statistics Note 3</option>
+    </Field>
+	<Field
+		name="note"
+		label="Note or Code"
+		shortname="n"
+		autocomplete="off"
+		persistent="yes"
+		required="no"
+		placeholder="Note to add to item..."
+	/>
+
+</GrimaForm>

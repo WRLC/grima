@@ -1,0 +1,10 @@
+.bundle
+.htaccess
+docs/dev
+dist
+releases
+node_modules
+.idea
+.vscode
+grima.db
+grima.sql

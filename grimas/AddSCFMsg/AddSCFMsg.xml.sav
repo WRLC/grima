@@ -1,0 +1,43 @@
+<GrimaForm>
+    <Title>Grima: Add Internal SCF Messages</Title>
+    <Field
+        name="barcode"
+        label="Barcode"
+        shortname="b"
+        autocomplete="off"
+        required="yes"
+        placeholder="Barcode of item you wish to modify..."
+        autofocus="autofocus"
+    />
+    	<Field
+        name="whichnote"
+        label="Field to Change:"
+        type="select"
+	autocomplete="off"
+        required="yes"
+        persistent="yes"
+        >
+        <option value="internal_note_1">Internal Note 1</option>
+        <option value="internal_note_2">Internal Note 2</option>
+        <option value="internal_note_3">Internal Note 3</option>
+        <option value="statistics_note_1">Statistics Note 1</option>
+        <option value="statistics_note_2">Statistics Note 2</option>
+        <option value="statistics_note_3">Statistics Note 3</option>
+    </Field>
+	<Field
+		name="Message"
+		label="Which Internal Message"
+		type="select"
+	autocomplete="off"
+        required="yes"
+        persistent="yes"
+        >
+        <option value="Low Temperature Media Preservation Unit #1 @ SC">Low Temperature Media Preservation Unit #1 @ SC</option>
+        <option value="Low Temperature Media Preservation Unit #2 @ SC">Low Temperature Media Preservation Unit #2 @ SC</option>
+        <option value="WRLC Microfilm Cabinets">WRLC Microfilm Cabinets</option>
+        <option value="At WRLC waiting to be processed">At WRLC waiting to be processed</option>
+        <option value="DO NOT DELETE">DO NOT DELETE</option>
+        <option value="WD">WD</option>
+    </Field>
+
+</GrimaForm>

@@ -1,0 +1,35 @@
+<GrimaForm>
+	<Title>Mark Set With Temporary Information</Title>
+	<Field
+		name="set_id"
+		label="Set ID (must be an all titles search)"
+		shortname="j"
+		autocomplete="off"
+		required="yes"
+		placeholder="Set to mark temporary"
+	/>
+	<Field
+		name="temp_library"
+		label="Temporary Library"
+		shortname="l"
+		autocomplete="on"
+		required="yes"
+		placeholder="Temporary Library"
+	/>
+	<Field
+		name="temp_location"
+		label="Temporary Location"
+		shortname="o"
+		autocomplete="on"
+		required="yes"
+		placeholder="Temporary Location"
+	/>
+	<Field
+                name="temp_policy"
+                label="Temporary Item Policy Code (like '7day' NOT '7 day loan')"
+                shortname="p"
+                autocomplete="on"
+                required="yes"
+                placeholder="Temporary Policy"
+        />
+</GrimaForm>

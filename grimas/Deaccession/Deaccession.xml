@@ -1,0 +1,13 @@
+<GrimaForm>
+    <Title>Deaccession Item (Update Call Number and Internal Note 1 to 'WD')</Title>
+    <Field
+        name="barcode"
+        label="Item Barcode"
+        shortname="b"
+        autocomplete="off"
+		autofocus="true"
+        required="yes"
+        placeholder="Barcode of item you wish to modify..."
+    />
+   
+</GrimaForm>

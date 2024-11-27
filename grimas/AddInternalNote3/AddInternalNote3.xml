@@ -1,0 +1,21 @@
+<GrimaForm>
+    <Title>Almagic: Add Internal Note 3</Title>
+    <Field
+        name="barcode"
+        label="Barcode"
+        shortname="b"
+        autocomplete="off"
+        required="yes"
+        placeholder="Barcode of item to modify..."
+    />
+    <Field
+        name="note"
+        label="Internal Note 3"
+        shortname="n"
+        autocomplete="on"
+        required="no"
+        persistent="yes"
+        placeholder="Note to add to item (ex. 'SCF Hold Shelf')..."
+    />
+
+</GrimaForm>

@@ -1,0 +1,21 @@
+<GrimaForm>
+    <Title>Bulk Add Item Call Number</Title>
+    <Field
+        name="barcode"
+        label="Barcode"
+        shortname="b"
+        autocomplete="off"
+        required="yes"
+		type="hidden"
+        placeholder="Barcode of item you wish to modify..."
+    />
+    <Field
+        name="note"
+        label="Item Call Number"
+        shortname="n"
+        autocomplete="on"
+        required="no"
+		type="hidden"
+        placeholder="Note to add to item..."
+    />
+</GrimaForm>

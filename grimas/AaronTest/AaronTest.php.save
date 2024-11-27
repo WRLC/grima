@@ -1,0 +1,30 @@
+<?php
+
+require_once("../grima-lib.php");
+
+class AaronTest extends GrimaTask {
+
+	function do_task() {
+		$holding = new Holding();
+		$holding->loadFromAlmaX($this['holding_id']);
+		$new_summary = $this['note'];
+		$holding->appendField('866','3','1',array('a' => $new_summary));
+		$holding->updateAlma();
+	}
+
+	function print_success() {
+		GrimaTask::call('PrintHolding', array('holding_id' => $this['holding_id']));
+	}
+}
+/*
+
+		if ($this['note'] == "") {
+			$this->addMessage('success',"Summary Holding Statement cleared on {$this['holding_id']}");
+		} else {
+			$this->addMessage('success',"Summary Holding Statement added to {$this['holding_id']}");
+		}
+	}
+
+}*/
+
+AaronTest::RunIt();

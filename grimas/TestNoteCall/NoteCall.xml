@@ -1,0 +1,30 @@
+<GrimaForm>
+    <Title>Add Item Call Number and Internal Note 1</Title>
+    <Field
+        name="barcode"
+        label="Barcode"
+        shortname="b"
+        autocomplete="off"
+		autofocus="true"
+        required="yes"
+        placeholder="Barcode of item you wish to modify..."
+    />
+    <Field
+        name="note"
+        label="Alternate Call Number"
+        shortname="c"
+        autocomplete="on"
+        required="no"
+        persistent="yes"
+        placeholder="Note to add to item..."
+    />
+    <Field
+        name="note"
+        label="Internal Note 1"
+        shortname="n"
+        autocomplete="on"
+        required="no"
+        persistent="yes"
+        placeholder="Note to add to item..."
+    />
+</GrimaForm>

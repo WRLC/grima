@@ -1,0 +1,36 @@
+<GrimaForm>
+    <Title>Grima: Add Provenance Code to Barcode</Title>
+    <Field
+        name="barcode"
+        label="Barcode"
+        shortname="b"
+        autocomplete="off"
+        required="yes"
+        placeholder="Barcode of item you wish to modify..."
+        autofocus="autofocus"
+    />
+    <Field
+        name="whichprov"
+        label="Choose a Provenance Code (owning library)"
+        type="select"
+        required="yes"
+        persistent="yes"
+        placeholder="Example: Property of American University"
+        >
+        <option value="01WRLC_AMU">Property of American University</option>
+        <option value="01WRLC_AMULAW">Property of American University Law School</option>
+        <option value="01WRLC_CAA">Property of Catholic University of America</option>
+        <option value="01WRLC_DOC">Property of University of the District of Columbia</option>
+        <option value="01WRLC_GAL">Property of Gallaudet University</option>
+        <option value="01WRLC_GML">Property of George Mason University</option>
+        <option value="01WRLC_GUNIV">Property of Georgetown University</option>
+        <option value="01WRLC_GUNIVLAW">Property of Georgetown University School of Law</option>
+        <option value="01WRLC_GWA">Property of George Washington University</option>
+        <option value="01WRLC_GWAHLTH">Property of George Washington Himmelfarb</option>
+        <option value="01WRLC_GWALAW">Property of George Washington University School of Law</option>
+        <option value="01WRLC_HOW">Property of Howard University</option>
+        <option value="01WRLC_MAR">Property of Marymount University</option>
+        <option value="01WRLC_SCF">Property of Washington Research Library Consortium</option>
+    </Field>
+
+</GrimaForm>

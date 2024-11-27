@@ -1,0 +1,42 @@
+<GrimaForm>
+    <Title>Grima: Add Retention Data</Title>
+    <Field
+        name="barcode"
+        label="Barcode"
+        shortname="b"
+        autocomplete="off"
+        required="yes"
+        placeholder="Barcode of item you wish to modify..."
+        autofocus="true"
+    />
+    <Field
+        name="retyesno"
+        label="Committed to Retain?"
+        type="select"
+        required="yes"
+        persistent="no"
+        placeholder="Enter 'true' or 'false' (case sensitive)"
+    />
+    <Field
+        name="whichret"
+        label="Choose a Retention Reason"
+        type="select"
+        required="no"
+        persistent="yes"
+        >
+        <option value="">clear values</option>
+        <option value="WRLCRetentionDONOTDELETE">WRLC Retention</option>
+        <option value="ConsortiaLastCopy">Consortia Last Copy</option>
+        <option value="Faculty Publication">Faculty Publication</option>
+        <option value="RareItem">Rare Item</option>
+    </Field>
+    <Field
+        name="retnote"
+        label="Enter a Retention Note"
+        shortname="n"
+        autocomplete="on"
+        required="no"
+        persistent="yes"
+        placeholder="Note to add to item..."
+    />
+</GrimaForm>

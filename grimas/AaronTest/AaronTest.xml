@@ -1,0 +1,27 @@
+<GrimaForm>
+    <Title>Grima: Aaron Test</Title>
+    <Field
+	name="mms_id"
+	label="Bib MMS ID"
+	shortname="m"
+	autocomplete="off"
+	required="yes"
+	placeholder="MMS ID of title to modify..."
+    />
+    <Field
+        name="holding_id"
+        label="Holding ID"
+        shortname="h"
+        autocomplete="off"
+        required="yes"
+        placeholder="Holding ID of holding to modify..."
+    />
+    <Field
+	name="note"
+	label="Summary Holding Statement"
+	shortname="n"
+	autocomplete="off"
+	required="yes"
+	placeholder="Statement to replace existing 866 subfield a..."
+    />
+</GrimaForm>
