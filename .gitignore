@@ -10,3 +10,5 @@ main
 grima
 grima.db
 grima.sql
+.env
+/DS_Store
