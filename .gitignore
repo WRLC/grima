@@ -6,5 +6,7 @@ releases
 node_modules
 .idea
 .vscode
+main
+grima
 grima.db
 grima.sql
