@@ -63,7 +63,7 @@ if(!empty($_GET['Barcode'])){
           <th>Internal Note 2 (Old Retention Note)</th>
         </tr>
     			<?php
-				foreach ($networkid_xml->QueryResult->ResultXml->rowset->Row as $item ) {printf('<tr><td>%s</td><td><span style="font-weight:bold">%s</span></td><td>%s</td><td><span style="color:red">%s</span></td><td>%s</td></tr>', $item->Column2, $item->Column4, $item->Column7, $item->Column5, $item->Column6);}      			?>
+				foreach ($networkid_xml->QueryResult->ResultXml->rowset->Row as $item ) {printf('<tr><td>%s</td><td><span style="font-weight:bold">%s</span></td><td>%s</td><td><span style="color:red">%s</span></td><td>%s</td></tr>', $item->Column2, $item->Column4, $item->Column7, $item->Column6, $item->Column5);}      			?>
     </table>
 		</div></div></div></div>
 </body>
