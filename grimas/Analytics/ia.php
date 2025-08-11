@@ -60,10 +60,11 @@ if(!empty($_GET['Barcode'])){
           <th><span style="font-weight:bold">Barcode (includes SCF records)</span></th>
           <th>Process Type (Lost, Missing, etc)</th>
           <th><span style="color:red">COMMITTED TO RETAIN?</span></th>
-          <th>Internal Note 2 (Old Retention Note)</th>
+          <th>Retention Reason</th>
+          <th>Item Call Number</th>
         </tr>
     			<?php
-				foreach ($networkid_xml->QueryResult->ResultXml->rowset->Row as $item ) {printf('<tr><td>%s</td><td><span style="font-weight:bold">%s</span></td><td>%s</td><td><span style="color:red">%s</span></td><td>%s</td></tr>', $item->Column2, $item->Column4, $item->Column7, $item->Column6, $item->Column5);}      			?>
+				foreach ($networkid_xml->QueryResult->ResultXml->rowset->Row as $item ) {printf('<tr><td>%s</td><td><span style="font-weight:bold">%s</span></td><td>%s</td><td><span style="color:red">%s</span></td><td>%s</td><td>%s</td></tr>', $item->Column2, $item->Column4, $item->Column8, $item->Column6, $item->Column9, $item->Column7);}      			?>
     </table>
 		</div></div></div></div>
 </body>

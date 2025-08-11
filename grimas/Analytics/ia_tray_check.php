@@ -49,10 +49,10 @@ if(!empty($_GET['ItemCall'])){
 				<button type="submit">Submit</button>
 			<br/>
 			</form>
-			<p>Barcode -- Internal Note 1 -- Item Call Number</p>
+			<p>Title -- Barcode -- Item Call Number -- Internal Note 1</p>
 			<ol type="1">
 			<?php
-			foreach ($analytics_xml->QueryResult->ResultXml->rowset->Row as $item ) {printf('<li>%s -- %s -- %s</li>', $item->Column1, $item->Column2, $item->Column3);}
+			foreach ($analytics_xml->QueryResult->ResultXml->rowset->Row as $item ) {printf('<li>%s -- %s -- %s -- %s</li>', $item->Column1, $item->Column2, $item->Column4, $item->Column3);}
 			?>
 			</ol>
 	</div></div></div></div>
