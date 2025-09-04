@@ -49,12 +49,19 @@ if(!empty($_GET['ItemCall'])){
 				<button type="submit">Submit</button>
 			<br/>
 			</form>
-			<p>Title -- Barcode -- Item Call Number -- Internal Note 1</p>
-			<ol type="1">
-			<?php
-			foreach ($analytics_xml->QueryResult->ResultXml->rowset->Row as $item ) {printf('<li>%s -- %s -- %s -- %s</li>', $item->Column1, $item->Column2, $item->Column4, $item->Column3);}
-			?>
-			</ol>
+		<p>All volumes located in tray <span style="font-weight:bold"><?php echo $_GET['ItemCall']; ?></span></p>
+			<table border= '2'>
+        		<tr>
+          			<th>Title</th>
+          			<th><span style="font-weight:bold">Barcode (includes SCF records)</span></th>
+          			<th>Item Call Number</th>
+		  			<th>Internal Note 1</th>
+					<th>Item Status</th>
+        		</tr>
+    			<?php
+					foreach ($analytics_xml->QueryResult->ResultXml->rowset->Row as $item ) {printf('<tr><td>%s</td><td><span style="font-weight:bold">%s</span></td><td>%s</td><td>%s</td><td>%s</td>', $item->Column1, $item->Column2, $item->Column4, $item->Column5, $item->Column3);}
+				?>
+</table>
 	</div></div></div></div>
 </body>
 </html>

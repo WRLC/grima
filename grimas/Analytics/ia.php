@@ -46,7 +46,7 @@ if(!empty($_GET['Barcode'])){
 			<h2 class="card-title">Retention Reassignment Tool</h2>
 		  </div>
 		  <div class="card-body">
-		    <p><h3 style="font-size: 1em">Insert barcode below of Lost/Missing/Damaged item to display all other copies of the title in the network</h3></p>
+		    <p><h3 style="font-size: 1em">Insert barcode to display all copies with matching Network ID (same edition of title)</h3></p>
 	<form action="">
 		<input type="text" name="Barcode" autofocus="autofocus" placeholder="Input barcode here"/ >
 		<button type="submit">Submit</button>
@@ -62,9 +62,10 @@ if(!empty($_GET['Barcode'])){
           <th><span style="color:red">COMMITTED TO RETAIN?</span></th>
           <th>Retention Reason</th>
           <th>Item Call Number</th>
+          <th>Fulfillment Note</th>
         </tr>
     			<?php
-				foreach ($networkid_xml->QueryResult->ResultXml->rowset->Row as $item ) {printf('<tr><td>%s</td><td><span style="font-weight:bold">%s</span></td><td>%s</td><td><span style="color:red">%s</span></td><td>%s</td><td>%s</td></tr>', $item->Column2, $item->Column4, $item->Column8, $item->Column6, $item->Column9, $item->Column7);}      			?>
+				foreach ($networkid_xml->QueryResult->ResultXml->rowset->Row as $item ) {printf('<tr><td>%s</td><td><span style="font-weight:bold">%s</span></td><td>%s</td><td><span style="color:red">%s</span></td><td>%s</td><td>%s</td><td>%s</td></tr>', $item->Column2, $item->Column4, $item->Column9, $item->Column7, $item->Column10, $item->Column8, $item->Column6);}      			?>
     </table>
 		</div></div></div></div>
 </body>
